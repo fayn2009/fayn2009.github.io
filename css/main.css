@@ -26,10 +26,11 @@ span {
 }
 
 div {
-    display: flexbox;
+    display: flex;
 }
 
 .main {
+    display: flexbox;
     width: 100%;
     height: 100%;
     align-items: center;
