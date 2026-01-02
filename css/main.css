@@ -45,20 +45,57 @@ div {
     background: #fff2;
     backdrop-filter: blur(3px);
     font-size: 28px;
-    border-color: #fff2;
+    border-color: #f228;
+    color: #00ccdd;
     border-radius: 50px 0 0 50px;
     padding: 6px 16px;
     border-right: 0;
+    transition: all 0.4s;
 }
 
 .submit {
     background: #fff2;
     backdrop-filter: blur(3px);
     font-size: 28px;
-    border-color: #fff2;
+    border-color: #f228;
+    color: #f22;
     border-radius: 0 50px 50px 0;
     padding: 6px 16px;
     border-left: 0;
+    transition: all 0.4s;
+}
+
+.entry:invalid {
+    color: #f22;
+}
+
+.entry:focus {
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+    border-width: 2px;
+    border-color: #00ccdd;
+    background-color: #00ccdd22;
+    color: #00ccdd;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: #00ccdd22;
+    border-color: #00ccdd;
+}
+
+.entry:hover {
+    background-color: #00ccdd22;
+    color: #00ccdd;
+}
+
+.entry:focus {
+    outline: none;
+}
+
+.entry:focus::placeholder {
+    opacity: 0;
 }
 
 .container {
